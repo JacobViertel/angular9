@@ -2,5 +2,9 @@
 <app-tasks></app-tasks>
 
 <h1>List of copleted Tasks</h1>
-<app-completed-tasks></app-completed-tasks>
+
+<button (click)="readMe()">Click Me</button>
+
+<div *ngIf="showMsg" [ngStyle]='{color:colorname}'> Showing this message from IF true statement</div>
+
 <router-outlet></router-outlet>

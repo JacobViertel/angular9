@@ -8,5 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'oneConversion';
 
+  showMsg = false;
+  colorname = "green";
+
+  readMe(){
+    console.log('button clicked');
+    if(this.showMsg){
+      this.showMsg = false;
+    }
+    else{
+      this.showMsg = true;
+    }
+  }
 
 }
