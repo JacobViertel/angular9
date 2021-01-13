@@ -11,6 +11,13 @@ export class AppComponent {
   showMsg = false;
   colorname = "green";
 
+  switchValue = 5;
+
+  users = [
+    {id: 1, name: 'john'},
+    {id: 2, name: 'john'},
+  ];
+
   readMe(){
     console.log('button clicked');
     if(this.showMsg){

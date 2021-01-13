@@ -12,4 +12,16 @@
 <ng-template #showThenMsg>Show Then Message </ng-template>
 <ng-template #showElseMsg>Show Else Message </ng-template>
 
+<h4>ngSwitch Example<h4>
+<div [ngSwitch]="users">
+    <div *ngSwitchCase="1">Value passed is: 1</div>
+    <div *ngSwitchCase="2">Value passed is: 2</div>
+    <div *ngSwitchCase="3">Value passed is: 3</div>
+    <div *ngSwitchCase="4">Value passed is: 4</div>
+    <div *ngSwitchDefault>Default Msg</div>
+
+</div>
+
+
+
 <router-outlet></router-outlet>
