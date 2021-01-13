@@ -7,4 +7,9 @@
 
 <div *ngIf="showMsg" [ngStyle]='{color:colorname}'> Showing this message from IF true statement</div>
 
+
+<div *ngIf="showMsg; than showThenMsg; else showElseMsg">If statement </div>
+<ng-template #showThenMsg>Show Then Message </ng-template>
+<ng-template #showElseMsg>Show Else Message </ng-template>
+
 <router-outlet></router-outlet>
