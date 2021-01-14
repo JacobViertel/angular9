@@ -14,8 +14,12 @@ export class AppComponent {
   switchValue = 5;
 
   users = [
-    {id: 1, name: 'john'},
-    {id: 2, name: 'john'},
+    {userId: 10, firstName: 'john'},
+    {userId: 20, firstName: 'marc'},
+    {userId: 30, firstName: 'dave'},
+    {userId: 40, firstName: 'jenny'},
+    {userId: 50, firstName: 'steve'},
+    {userId: 60, firstName: 'kai'}
   ];
 
   readMe(){
