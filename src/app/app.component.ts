@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'oneConversion';
 
+  clsName = 'one';
+  clsName2 = 'two';
+
   showMsg = false;
   colorname = "green";
 
@@ -34,5 +37,5 @@ export class AppComponent {
       this.showMsg = true;
     }
   }
-
+  
 }

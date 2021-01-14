@@ -49,5 +49,14 @@
     Learning Angular is fun
 </div>
 
+<div [ngClass]="[clsName, clsName2]">
+    Learning Angular is fun ngClass
+</div>
+
+<div [ngClass]="{'one':true, 'two':fasle}">
+    Learning Angular is fun ngClass with expression
+</div>
+
+
 
 <router-outlet></router-outlet>
