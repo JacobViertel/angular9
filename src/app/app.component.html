@@ -12,6 +12,7 @@
 <ng-template #showThenMsg>Show Then Message </ng-template>
 <ng-template #showElseMsg>Show Else Message </ng-template>
 
+
 <h4>ngSwitch Example<h4>
 <div [ngSwitch]="users">
     <div *ngSwitchCase="1">Value passed is: 1</div>
@@ -21,8 +22,8 @@
     <div *ngSwitchDefault>Default Msg</div>
 </div>
 
-<h4>ngFor Example<h4>
 
+<h4>ngFor Example<h4>
 <table class="table">
     <tr>
         <th>            User user Id     </th>
@@ -43,6 +44,10 @@
         <td> {{o}}</td>
     </tr>
 </table>
+
+<div [ngStyle]="{'color': colorVal, 'background-color':bgVal}">
+    Learning Angular is fun
+</div>
 
 
 <router-outlet></router-outlet>

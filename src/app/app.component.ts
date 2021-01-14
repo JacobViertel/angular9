@@ -11,6 +11,9 @@ export class AppComponent {
   showMsg = false;
   colorname = "green";
 
+  colorVal = "blue";
+  bgVal = '#ddd';
+
   switchValue = 5;
 
   users = [
