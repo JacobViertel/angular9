@@ -1,6 +1,10 @@
 <h1 class="bg-primary">Welcome to {{title}}</h1>
 <app-tasks></app-tasks>
 
+
+<h1>Test modal from Modal</h1>
+
+
 <h1>List of copleted Tasks</h1>
 
 <button (click)="readMe()">Click Me</button>
@@ -53,10 +57,46 @@
     Learning Angular is fun ngClass
 </div>
 
-<div [ngClass]="{'one':true, 'two':fasle}">
+<div [ngClass]="{'one':true, 'two':false}">
     Learning Angular is fun ngClass with expression
 </div>
 
+<!--  
+interpolation
+--> 
+<div> 
+    <h4>{{subTitle}}</h4>
+    <h4>{{epNum}}</h4>
+    <h4>{{user.status}}</h4>
+</div>
 
+<!--  
+property binding
+Attribute Binding
+--> 
+<div [ngStyle]="{color:colorVal}">This is example of property Binding</div>
+<p [innerHTML]="subTitle"></p>
+<div [ngClass]= "clsName">ngClass</div>
+<input [placeholder]="placeholderVal">
+<a [href]="hrefVal" [attr.updateLink]="updatedLink" [attr.data-link]="updatedLink">Google</a>
+
+<!--  
+event binding
+--> 
+<h4>Learning Event Binding</h4>
+<button (click)="showAlert(10);">Click Me </button>
+<p>
+<input (focus)="consoleLog();" />
+
+<!--  
+two way data binding
+-->
+<h4>Learning 2way Data Binding</h4>
+
+<input [(ngModel)]="firstname" />
+
+<button (click)="readFirstname()">Read Firstname</button>
+
+<div>{{firstname}}</div>
 
 <router-outlet></router-outlet>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'oneConversion';
+
+  firstname ="";
+
+  subTitle= "Its fun to learn Interpolation";
+  epNum = 17;
 
   clsName = 'one';
   clsName2 = 'two';
@@ -18,6 +24,12 @@ export class AppComponent {
   bgVal = '#ddd';
 
   switchValue = 5;
+
+  user = {
+    userId: 10, 
+    firstName: 'john',
+    status: 'Active'
+  };
 
   users = [
     {userId: 10, firstName: 'john'},
@@ -36,6 +48,22 @@ export class AppComponent {
     else{
       this.showMsg = true;
     }
+  }
+
+  placeholderVal= "Enter value";
+  hrefVal = "http://google.com";
+  updatedLink= "http://oracle.com";
+
+  showAlert(id){
+    alert("Hello From ARC Tuts "+id);
+  }
+
+  consoleLog(){
+    console.log('hello from input focus');
+  }
+
+  readFirstname(){
+    console.log(this.firstname);
   }
   
 }
